@@ -1,0 +1,519 @@
+{
+	"info": {
+		"_postman_id": "84482297-f111-46ef-82f7-6b68db2451c1",
+		"name": "Course",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "HW_1",
+			"item": [
+				{
+					"name": "EP_1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://162.55.220.72:5005/get_method?name=Nata&age=30",
+							"protocol": "http",
+							"host": [
+								"162",
+								"55",
+								"220",
+								"72"
+							],
+							"port": "5005",
+							"path": [
+								"",
+								"get_method"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "Nata"
+								},
+								{
+									"key": "age",
+									"value": "30"
+								}
+							]
+						}
+					},
+					"response": [[
+    "Nata",
+    "30"
+]]
+				},
+				{
+					"name": "EP_2",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Nata",
+									"type": "text"
+								},
+								{
+									"key": "age",
+									"value": "30",
+									"type": "text"
+								},
+								{
+									"key": "salary",
+									"value": "2000",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://162.55.220.72:5005/user_info_3",
+							"protocol": "http",
+							"host": [
+								"162",
+								"55",
+								"220",
+								"72"
+							],
+							"port": "5005",
+							"path": [
+								"user_info_3"
+							]
+						}
+					},
+					"response": [{
+    "age": "30",
+    "family": {
+        "children": [
+            [
+                "Alex",
+                24
+            ],
+            [
+                "Kate",
+                12
+            ]
+        ],
+        "u_salary_1_5_year": 8000
+    },
+    "name": "Nata",
+    "salary": 2000
+}]
+				},
+				{
+					"name": "EP_3",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://162.55.220.72:5005/object_info_1?name=Nata&age=30&weight=52",
+							"protocol": "http",
+							"host": [
+								"162",
+								"55",
+								"220",
+								"72"
+							],
+							"port": "5005",
+							"path": [
+								"object_info_1"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "Nata"
+								},
+								{
+									"key": "age",
+									"value": "30"
+								},
+								{
+									"key": "weight",
+									"value": "52"
+								}
+							]
+						}
+					},
+					"response": [{
+    "age": 30,
+    "daily_food": 0.624,
+    "daily_sleep": 130.0,
+    "name": "Nata"
+}]
+				},
+				{
+					"name": "EP_4",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://162.55.220.72:5005/object_info_2?name=Masha&age=35&salary=1000",
+							"protocol": "http",
+							"host": [
+								"162",
+								"55",
+								"220",
+								"72"
+							],
+							"port": "5005",
+							"path": [
+								"object_info_2"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "Masha"
+								},
+								{
+									"key": "age",
+									"value": "35"
+								},
+								{
+									"key": "salary",
+									"value": "1000"
+								}
+							]
+						}
+					},
+					"response": [{
+    "person": {
+        "u_age": 35,
+        "u_name": [
+            "Masha",
+            1000,
+            35
+        ],
+        "u_salary_5_years": 4200.0
+    },
+    "qa_salary_after_1.5_year": 3300.0,
+    "qa_salary_after_12_months": 2700.0,
+    "qa_salary_after_3.5_years": 3800.0,
+    "qa_salary_after_6_months": 2000,
+    "start_qa_salary": 1000
+}]
+				},
+				{
+					"name": "EP_5",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://162.55.220.72:5005/object_info_3?name=Nata&age=35&salary=2000",
+							"protocol": "http",
+							"host": [
+								"162",
+								"55",
+								"220",
+								"72"
+							],
+							"port": "5005",
+							"path": [
+								"object_info_3"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "Nata"
+								},
+								{
+									"key": "age",
+									"value": "35"
+								},
+								{
+									"key": "salary",
+									"value": "2000"
+								}
+							]
+						}
+					},
+					"response": [{
+    "age": "35",
+    "family": {
+        "children": [
+            [
+                "Alex",
+                24
+            ],
+            [
+                "Kate",
+                12
+            ]
+        ],
+        "pets": {
+            "cat": {
+                "age": 3,
+                "name": "Sunny"
+            },
+            "dog": {
+                "age": 4,
+                "name": "Luky"
+            }
+        },
+        "u_salary_1_5_year": 8000
+    },
+    "name": "Nata",
+    "salary": 2000
+}]
+				},
+				{
+					"name": "EP_6",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://162.55.220.72:5005/object_info_4?name=Nata&age=35&salary=2000",
+							"protocol": "http",
+							"host": [
+								"162",
+								"55",
+								"220",
+								"72"
+							],
+							"port": "5005",
+							"path": [
+								"object_info_4"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "Nata"
+								},
+								{
+									"key": "age",
+									"value": "35"
+								},
+								{
+									"key": "salary",
+									"value": "2000"
+								}
+							]
+						}
+					},
+					"response": [{
+    "age": 35,
+    "name": "Nata",
+    "salary": [
+        2000,
+        "4000",
+        "6000"
+    ]
+}]
+				},
+				{
+					"name": "EP_7",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Natali",
+									"type": "text"
+								},
+								{
+									"key": "age",
+									"value": "37",
+									"type": "text"
+								},
+								{
+									"key": "salary",
+									"value": "5000",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://162.55.220.72:5005/user_info_2",
+							"protocol": "http",
+							"host": [
+								"162",
+								"55",
+								"220",
+								"72"
+							],
+							"port": "5005",
+							"path": [
+								"user_info_2"
+							]
+						}
+					},
+					"response": [{
+    "person": {
+        "u_age": 37,
+        "u_name": [
+            "Natali",
+            5000,
+            37
+        ],
+        "u_salary_5_years": 21000.0
+    },
+    "qa_salary_after_1.5_year": 16500.0,
+    "qa_salary_after_12_months": 13500.0,
+    "qa_salary_after_3.5_years": 19000.0,
+    "qa_salary_after_6_months": 10000,
+    "start_qa_salary": 5000
+}]
+				}
+			]
+		},
+		{
+			"name": "form_data",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"// pm.test(\"Status code is 200\", function () {\r",
+							"//    pm.response.to.have.status(200);\r",
+							"// });\r",
+							"\r",
+							"let item_1 = 2\r",
+							"\r",
+							"pm.test(\"Item_1 Test\", function () {\r",
+							"\r",
+							"    pm.expect(item_1).to.equal(2)\r",
+							"});\r",
+							"\r",
+							"//Cоздадим переменную person и будем её тестить\r",
+							"let person_my = {\r",
+							"    \"age\": \"37\",\r",
+							"    \"family\": {\r",
+							"        \"children\": [ [\"Alex\",24 ], [\"Kate\",12] ],\r",
+							"        \"u_salary_1_5_year\": 2400\r",
+							"    },\r",
+							"    \"name\": \"Nata\",\r",
+							"    \"salary\": 600\r",
+							"}\r",
+							"\r",
+							"\r",
+							"pm.test(\"Item_2 Person_my\", function () {\r",
+							"\r",
+							"    pm.expect(person_my.age).to.equal(\"37\")\r",
+							"});\r",
+							"\r",
+							"//Чтобы данные тянуть из body, кот приходит с сервера\r",
+							"const jsonData = pm.response.json();\r",
+							"\r",
+							" pm.test(\"Item_3 Person_from_body\", function () {\r",
+							"\r",
+							"     pm.expect(jsonData.age).to.equal(\"35\")\r",
+							"});\r",
+							"// Массивы и элементы массивов начинаются с нуля\r",
+							" pm.test(\"Item_4 children_Alex\", function () {\r",
+							"\r",
+							"     pm.expect(jsonData.family.children[0][1]).to.equal(24)\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Item_5 children_Kate\", function () {\r",
+							"\r",
+							"     pm.expect(jsonData.family.children[1][1]).to.equal(12)\r",
+							"});\r",
+							"//Проверим что есть параметр name\r",
+							"pm.test(\"Item_6 Test\", function () {\r",
+							"\r",
+							"     pm.expect(jsonData).to.have.property(\"name\")\r",
+							"});\r",
+							"//Проверим что есть кусок jsona\r",
+							"pm.test(\"Item_7 Test\", function () {\r",
+							"\r",
+							"     pm.expect(jsonData).to.deep.include({\"salary\": 600})\r",
+							"});\r",
+							"//Проверить что первый элемент массива (Kate) содержит \"Kate\" (счет с 0)\r",
+							"pm.test(\"Item_8 children_Kate\", function () {\r",
+							"\r",
+							"     pm.expect(jsonData.family.children[1]).to.deep.include(\"Kate\")\r",
+							"});\r",
+							"//Проверить что первый элемент массива (Kate) содержит в первом элементе массива \"K\" (счет с 0)\r",
+							"pm.test(\"Item_9 children_Kate\", function () {\r",
+							"\r",
+							"     pm.expect(jsonData.family.children[1][0]).to.deep.include(\"K\")\r",
+							"});\r",
+							"//Проверка на тип данных (на массив)\r",
+							"pm.test(\"Item_10 children_Kate\", function () {\r",
+							"\r",
+							"     pm.expect(jsonData.family.children[1]).to.be.a(\"Array\")\r",
+							"});\r",
+							"//Проверка на тип данных (на номер)\r",
+							"pm.test(\"Item_11 children_Kate\", function () {\r",
+							"\r",
+							"     pm.expect(jsonData.family.children[1][1]).to.be.a(\"Number\")\r",
+							"});\r",
+							"//Проверка на тип данных (на cnhjrjdsq)\r",
+							"pm.test(\"Item_12 children_Kate\", function () {\r",
+							"\r",
+							"     pm.expect(jsonData.family.children[1][0]).to.be.a(\"String\")\r",
+							"});\r",
+							"//Проверка что в name параметр value - String строка\r",
+							"pm.test(\"Item_13 children_Kate\", function () {\r",
+							"\r",
+							"     pm.expect(jsonData.name).to.be.a(\"String\")\r",
+							"});\r",
+							"//\r",
+							"//Проверка на тип данных (на массив) и значение\r",
+							"pm.test(\"Item_14 children_Kate\", function () {\r",
+							"\r",
+							"     pm.expect(jsonData.family.children[1]).to.be.an(\"Array\").that.include(12)\r",
+							"});\r",
+							"//Сравнить массив co значением\r",
+							"pm.test(\"Item_15 childrens\", function () {\r",
+							"\r",
+							"     pm.expect(jsonData.family.children[0]).to.eql([\"Alex\",24])\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "age",
+							"value": "35",
+							"type": "text"
+						},
+						{
+							"key": "salary",
+							"value": "600",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "Nata",
+							"type": "text"
+						},
+						{
+							"key": "auth_token",
+							"value": "/s34lfgbj/Vadim/jjd909/12242kjkWpqc322823r23r3r457271evny",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://162.55.220.72:5005/get_test_user",
+					"protocol": "http",
+					"host": [
+						"162",
+						"55",
+						"220",
+						"72"
+					],
+					"port": "5005",
+					"path": [
+						"get_test_user"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
