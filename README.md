@@ -4,7 +4,7 @@
 
 **Создать запросы в Postman.**
 
-***Create new collection - New request***
+<h2>Create new collection - New request</h2>
 
     Protocol: http
     IP: 162.55.220.72
@@ -34,7 +34,7 @@ response:
     "30"
 ]
 в поле "Enter request URL" будет отображаться URL http://162.55.220.72:5005/get_method?name=Nata&age=34
-<hr>---</hr>
+<hr>
 EP_2
 Method: POST
 EndPoint: /user_info_3
