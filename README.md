@@ -34,7 +34,7 @@ response:
     "30"
 ]
 в поле "Enter request URL" будет отображаться URL http://162.55.220.72:5005/get_method?name=Nata&age=34
-<hr>------------------------------------------------------------------------------------------------------</hr>
+<hr>---</hr>
 EP_2
 Method: POST
 EndPoint: /user_info_3
@@ -61,7 +61,7 @@ response:
     "salary": 50000
 }
 в поле "Enter request URL" URL не изменяется
-<hr>------------------------------------------------------------------------------------------------------</hr>
+<hr>***</hr>
 EP_3
 Method: GET EndPoint: /object_info_1 request url params: name: str age: int weight: int
 
