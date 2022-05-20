@@ -4,7 +4,7 @@
 
 **Создать запросы в Postman.**
 
-<h2>Create new collection - New request</h2>
+<h4>Create new collection - New request</h4>
 
     Protocol: http
     IP: 162.55.220.72
@@ -12,12 +12,12 @@
 
 в поле "Enter request URL" вписать http://162.55.220.72:5005/ и нажать Save
 
-EP_1
-Method: GET
-EndPoint: /get_method
-request url params:
-name: str
-age: int
+EP_1<br>
+Method: GET<br>
+EndPoint: /get_method<br>
+request url params:<br>
+name: str<br>
+age: int<br>
 
 В коллекции Course создать "New Request" и переименовать его в "EP1"
 1. Выбрать метод GET, в поле "Enter request URL" дописать "/get_method", чтоб получилось http://162.55.220.72:5005/get_method
