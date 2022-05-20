@@ -1,14 +1,14 @@
 ﻿# Postman
 
-Работа в Postman
+<h1 align="center">Работа в Postman</h1>
 
-Создать запросы в Postman.
+**Создать запросы в Postman.**
 
-Create new collection - New request
+***Create new collection - New request***
 
-Protocol: http
-IP: 162.55.220.72
-Port: 5005
+    Protocol: http
+    IP: 162.55.220.72
+    Port: 5005
 
 в поле "Enter request URL" вписать http://162.55.220.72:5005/ и нажать Save
 
@@ -34,9 +34,7 @@ response:
     "30"
 ]
 в поле "Enter request URL" будет отображаться URL http://162.55.220.72:5005/get_method?name=Nata&age=34
-
-
-
+<hr>------------------------------------------------------------------------------------------------------</hr>
 EP_2
 Method: POST
 EndPoint: /user_info_3
@@ -63,7 +61,7 @@ response:
     "salary": 50000
 }
 в поле "Enter request URL" URL не изменяется
-
+<hr>------------------------------------------------------------------------------------------------------</hr>
 EP_3
 Method: GET EndPoint: /object_info_1 request url params: name: str age: int weight: int
 
@@ -84,8 +82,7 @@ response:
     "name": "Nata"
 }
 в поле "Enter request URL" будет отображаться URL http://162.55.220.72:5005/object_info_1?name=Nata&age=34&weight=70
-
-
+<hr>------------------------------------------------------------------------------------------------------</hr>
 EP_4
 Method: GET
 EndPoint: /object_info_2
@@ -114,8 +111,7 @@ response: ответ
     "start_qa_salary": 50000
 }
 в поле "Enter request URL" будет отображаться URL http://162.55.220.72:5005/object_info_2?name=Nata&age=34&salary=50000
-
-
+<hr>------------------------------------------------------------------------------------------------------</hr>
 EP_5
 Method: GET
 EndPoint: /object_info_3
@@ -144,8 +140,7 @@ response:
     "salary": 50000
 }
 в поле "Enter request URL" будет отображаться URL http://162.55.220.72:5005/object_info_3?name=Nata&age=34&salary=50000
-
-
+<hr>------------------------------------------------------------------------------------------------------</hr>
 EP_6
 Method: GET
 EndPoint: /object_info_4
@@ -170,8 +165,7 @@ response:
     "salary": [50000, "100000", "150000"]
 }
 в поле "Enter request URL" будет отображаться URL http://162.55.220.72:5005/object_info_4?name=Nata&age=34&salary=50000
-
-
+<hr>------------------------------------------------------------------------------------------------------</hr>
 EP_7
 Method: POST
 EndPoint: /user_info_2
