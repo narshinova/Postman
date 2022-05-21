@@ -1,6 +1,14 @@
 ﻿# Postman
 
 <h1 align="center">Работа в Postman</h1>
+<h2>[HW_1]</h2>(https://github.com/narshinova/Postman/blob/main/README.md#%D1%81%D0%BE%D0%B7%D0%B4%D0%B0%D1%82%D1%8C-%D0%B7%D0%B0%D0%BF%D1%80%D0%BE%D1%81%D1%8B-%D0%B2-postman)
+[EP_1 /get_method](https://github.com/narshinova/Postman/blob/main/README.md#ep_1)
+[EP_2 /user_info_3](https://github.com/narshinova/Postman/blob/main/README.md#ep_2)
+[EP_3 /object_info_1](https://github.com/narshinova/Postman/blob/main/README.md#ep_3)
+[EP_4 /object_info_2](https://github.com/narshinova/Postman/blob/main/README.md#ep_4)
+[EP_5 /object_info_3](https://github.com/narshinova/Postman/blob/main/README.md#ep_5)
+[EP_6 /object_info_4](https://github.com/narshinova/Postman/blob/main/README.md#ep_6)
+[EP_7 /user_info_2](https://github.com/narshinova/Postman/blob/main/README.md#ep_7)
 
 <h4>Создать запросы в Postman.</h4>
 
@@ -54,7 +62,7 @@ salary: int<br>
 
 response:</i><br>
 ответ
-
+```json
 {   
     "age": "34",
     "family": {"children": [["Alex", 24], ["Kate", 12]],
@@ -62,7 +70,7 @@ response:</i><br>
     "name": "Nata",
     "salary": 50000
 }
-
+```
 
 в поле "Enter request URL" URL не изменяется
 <hr>
@@ -84,13 +92,14 @@ weight: int<br>
 
 response:</i><br>
 ответ
-
+```json
 {
     "age": 34,
     "daily_food": 0.84,
     "daily_sleep": 175.0,
     "name": "Nata"
 }
+```
 в поле "Enter request URL" будет отображаться URL http://162.55.220.72:5005/object_info_1?name=Nata&age=34&weight=70
 <hr>
 <h2>EP_4</h2>
@@ -111,7 +120,7 @@ salary: int<br>
 
 response: </i><br>
 ответ
-
+```json
 {   
     "person": {"u_age": 34,
                "u_name": ["Nata", 50000, 34],
@@ -122,6 +131,7 @@ response: </i><br>
     "qa_salary_after_6_months": 100000,
     "start_qa_salary": 50000
 }
+```
 в поле "Enter request URL" будет отображаться URL http://162.55.220.72:5005/object_info_2?name=Nata&age=34&salary=50000
 <hr>
 <h2>EP_5</h2>
@@ -174,13 +184,13 @@ salary: int<br>
 
 response:</i><br>
 ответ
-
+```json
 {
     "age": 34,
     "name": "Nata",
     "salary": [50000, "100000", "150000"]
 }
-
+```
 в поле "Enter request URL" будет отображаться URL http://162.55.220.72:5005/object_info_4?name=Nata&age=34&salary=50000
 <hr>
 <h2>EP_7</h2>
@@ -201,7 +211,7 @@ salary: int<br>
 
 response:</i><br>
 ответ
-
+```json
 {
     "person": {"u_age": 34,
                "u_name": ["Nata", 50000, 34],
@@ -212,5 +222,5 @@ response:</i><br>
     "qa_salary_after_6_months": 100000,
     "start_qa_salary": 50000
 }
-
+```
 в поле "Enter request URL" URL не изменяется
