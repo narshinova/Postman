@@ -143,8 +143,8 @@ salary: int<br>
 response:</i><br>
 ответ
 
-```html
-<{
+```json
+{
     "age": "34",
     "family": {"children": [["Alex", 24], ["Kate", 12]],
                "pets": {"cat": {"age": 3, "name": "Sunny"},
@@ -152,7 +152,8 @@ response:</i><br>
                "u_salary_1_5_year": 200000},
     "name": "Nata",
     "salary": 50000
-}>
+}
+```
 в поле "Enter request URL" будет отображаться URL http://162.55.220.72:5005/object_info_3?name=Nata&age=34&salary=50000
 <hr>
 <h2>EP_6</h2>
@@ -173,13 +174,13 @@ salary: int<br>
 
 response:</i><br>
 ответ
-```
+
 {
     "age": 34,
     "name": "Nata",
     "salary": [50000, "100000", "150000"]
 }
-```
+
 в поле "Enter request URL" будет отображаться URL http://162.55.220.72:5005/object_info_4?name=Nata&age=34&salary=50000
 <hr>
 <h2>EP_7</h2>
@@ -200,7 +201,7 @@ salary: int<br>
 
 response:</i><br>
 ответ
-```html
+
 {
     "person": {"u_age": 34,
                "u_name": ["Nata", 50000, 34],
@@ -211,5 +212,5 @@ response:</i><br>
     "qa_salary_after_6_months": 100000,
     "start_qa_salary": 50000
 }
-```
+
 в поле "Enter request URL" URL не изменяется
