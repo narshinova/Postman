@@ -4,13 +4,13 @@
 
 **[HW_1](https://github.com/narshinova/Postman/blob/main/README.md#%D1%81%D0%BE%D0%B7%D0%B4%D0%B0%D1%82%D1%8C-%D0%B7%D0%B0%D0%BF%D1%80%D0%BE%D1%81%D1%8B-%D0%B2-postman)**
 
-[EP_1 /get_method](https://github.com/narshinova/Postman/blob/main/README.md#ep_1)
-[EP_2 /user_info_3](https://github.com/narshinova/Postman/blob/main/README.md#ep_2)
-[EP_3 /object_info_1](https://github.com/narshinova/Postman/blob/main/README.md#ep_3)
-[EP_4 /object_info_2](https://github.com/narshinova/Postman/blob/main/README.md#ep_4)
-[EP_5 /object_info_3](https://github.com/narshinova/Postman/blob/main/README.md#ep_5)
-[EP_6 /object_info_4](https://github.com/narshinova/Postman/blob/main/README.md#ep_6)
-[EP_7 /user_info_2](https://github.com/narshinova/Postman/blob/main/README.md#ep_7)
+[EP_1 /get_method](https://github.com/narshinova/Postman/blob/main/README.md#ep_1)<br>
+[EP_2 /user_info_3](https://github.com/narshinova/Postman/blob/main/README.md#ep_2)<br>
+[EP_3 /object_info_1](https://github.com/narshinova/Postman/blob/main/README.md#ep_3)<br>
+[EP_4 /object_info_2](https://github.com/narshinova/Postman/blob/main/README.md#ep_4)<br>
+[EP_5 /object_info_3](https://github.com/narshinova/Postman/blob/main/README.md#ep_5)<br>
+[EP_6 /object_info_4](https://github.com/narshinova/Postman/blob/main/README.md#ep_6)<br>
+[EP_7 /user_info_2](https://github.com/narshinova/Postman/blob/main/README.md#ep_7)<br>
 
 <h4>Создать запросы в Postman.</h4>
 
