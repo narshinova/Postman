@@ -2,9 +2,9 @@
 
 <h1 align="center">Работа в Postman</h1>
 
-**Создать запросы в Postman.**
+<h4>Создать запросы в Postman.</h4>
 
-<h4>Create new collection - New request</h4>
+***Create new collection - New request***
 
     Protocol: http
     IP: 162.55.220.72
@@ -12,7 +12,8 @@
 
 в поле "Enter request URL" вписать http://162.55.220.72:5005/ и нажать Save
 
-EP_1<br>
+<h2>EP_1</h2><br>
+
 Method: GET<br>
 EndPoint: /get_method<br>
 request url params:<br>
