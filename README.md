@@ -44,6 +44,7 @@ name: str<br>
 age: int<br>
 salary: int<br>
 
+
 <i>В коллекции Course создать "New Request" и переименовать его в "EP2"<br>
 1. Выбрать метод Post, в поле "Enter request URL" вписать http://162.55.220.72:5005/user_info_3<br>
 2. выбрать "Body" в нем "from-data"<br>
@@ -142,7 +143,8 @@ salary: int<br>
 response:</i><br>
 ответ
 
-{
+```html
+<{
     "age": "34",
     "family": {"children": [["Alex", 24], ["Kate", 12]],
                "pets": {"cat": {"age": 3, "name": "Sunny"},
@@ -150,7 +152,7 @@ response:</i><br>
                "u_salary_1_5_year": 200000},
     "name": "Nata",
     "salary": 50000
-}
+}>
 в поле "Enter request URL" будет отображаться URL http://162.55.220.72:5005/object_info_3?name=Nata&age=34&salary=50000
 <hr>
 <h2>EP_6</h2>
