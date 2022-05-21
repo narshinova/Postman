@@ -43,9 +43,9 @@ request form data:<br.
 name: str<br>
 age: int<br>
 salary: int<br>
-<hr>-</hr>
-<i>В коллекции Course создать "New Request" и переименовать его в "EP2"
-1. Выбрать метод Post, в поле "Enter request URL" вписать http://162.55.220.72:5005/user_info_3
+
+<i>В коллекции Course создать "New Request" и переименовать его в "EP2"<br>
+1. Выбрать метод Post, в поле "Enter request URL" вписать http://162.55.220.72:5005/user_info_3<br>
 2. выбрать "Body" в нем "from-data"<br>
 2.1. в столбец "KEY" добавить три строки с именами "name", "age" и "salary"<br>
 2.2. в столбец "VALUE" добавить значения "Nata", "34" и "50000" напротив ключей "name", "age" и "salary" соответственно<br>
@@ -53,7 +53,7 @@ salary: int<br>
 
 response:</i><br>
 ответ
-<code class="prettyprint">
+
 {   
     "age": "34",
     "family": {"children": [["Alex", 24], ["Kate", 12]],
@@ -61,9 +61,10 @@ response:</i><br>
     "name": "Nata",
     "salary": 50000
 }
-</code>
+
+
 в поле "Enter request URL" URL не изменяется
-<hr>***</hr>
+<hr>
 <h2>EP_3</h2>
 Method: GET<br>
 EndPoint: /object_info_1 <br>
@@ -176,6 +177,7 @@ response:</i><br>
     "name": "Nata",
     "salary": [50000, "100000", "150000"]
 }
+```
 в поле "Enter request URL" будет отображаться URL http://162.55.220.72:5005/object_info_4?name=Nata&age=34&salary=50000
 <hr>
 <h2>EP_7</h2>
@@ -185,7 +187,7 @@ request form data:<br>
 name: str<br>
 age: int<br>
 salary: int<br>
-```
+
 
 <i>В коллекции Course создать "New Request" и переименовать его в "EP7"
 1. Выбрать метод Post, в поле "Enter request URL" вписать http://162.55.220.72:5005/user_info_2<br>
@@ -197,8 +199,6 @@ salary: int<br>
 response:</i><br>
 ответ
 ```html
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-```
 {
     "person": {"u_age": 34,
                "u_name": ["Nata", 50000, 34],
@@ -209,4 +209,5 @@ response:</i><br>
     "qa_salary_after_6_months": 100000,
     "start_qa_salary": 50000
 }
+```
 в поле "Enter request URL" URL не изменяется
