@@ -10,7 +10,12 @@
 [EP_4 /object_info_2](https://github.com/narshinova/Postman/blob/main/README.md#ep_4)<br>
 [EP_5 /object_info_3](https://github.com/narshinova/Postman/blob/main/README.md#ep_5)<br>
 [EP_6 /object_info_4](https://github.com/narshinova/Postman/blob/main/README.md#ep_6)<br>
-[EP_7 /user_info_2](https://github.com/narshinova/Postman/blob/main/README.md#ep_7)<br>
+[EP_7 /user_info_2](https://github.com/narshinova/Postman/blob/main/README.md#ep_7)<hr>
+
+</i><h3>Автотесты:<h3></i>
+    
+[Поверка типа значения](https://github.com/narshinova/Postman/edit/main/README.md#%D0%BF%D1%80%D0%BE%D0%B2%D0%B5%D1%80%D0%BA%D0%B0-%D1%82%D0%B8%D0%BF%D0%B0-%D0%B7%D0%BD%D0%B0%D1%87%D0%B5%D0%BD%D0%B8%D1%8F)<br>
+[Проверка значения ответа по переменной](https://github.com/narshinova/Postman/edit/main/README.md#%D0%BF%D1%80%D0%BE%D0%B2%D0%B5%D1%80%D0%BA%D0%B0-%D0%B7%D0%BD%D0%B0%D1%87%D0%B5%D0%BD%D0%B8%D1%8F-%D0%BE%D1%82%D0%B2%D0%B5%D1%82%D0%B0-%D0%BF%D0%BE-%D0%BF%D0%B5%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%BD%D0%BE%D0%B9)<hr>
 
 <h4>Создать запросы в Postman.</h4>
 
@@ -225,4 +230,39 @@ response:</i><br>
     "start_qa_salary": 50000
 }
 ```
-в поле "Enter request URL" URL не изменяется
+в поле "Enter request URL" URL не изменяется<hr>
+
+
+<h2>Проверка типа значения</h2>
+
+<i>/* ответ имеет такую структуру:</i>
+```json
+{
+  "name": "Nata",
+  "age": 37,
+  "hobbies": [
+    "travelling",
+    "photo"
+  ],
+  "email": null
+}
+```
+*/
+```js
+const jsonData = pm.response.json();
+pm.test("Test data type of the response", () => {
+  pm.expect(jsonData).to.be.an("object");
+  pm.expect(jsonData.name).to.be.a("string");
+  pm.expect(jsonData.age).to.be.a("number");
+  pm.expect(jsonData.hobbies).to.be.an("array");
+  pm.expect(jsonData.website).to.be.undefined;
+  pm.expect(jsonData.email).to.be.null;
+});
+```
+<h2>Проверка значения ответа по переменной</h2>
+
+```javascript
+pm.test("Checking the response value by variable", function () {
+  pm.expect(pm.response.json().name).to.eql("Nata");
+});
+```
