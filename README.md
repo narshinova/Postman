@@ -429,8 +429,10 @@ Save - Send<br>
 ```
 PASS Body is correct
 ```
-    <hr>
-    <h5>(EP2 из HW_1) http://162.55.220.72:5005/user_info_3</h5>
+<hr>
+    
+<h3>Endpoint_1</h3>
+http://162.55.220.72:5005/user_info_3 (EP_5 из HW_1)<br>
 <i>Add request<br>
 метод POST<br>
 в поле "Enter request URL" вписать http://162.55.220.72:5005/user_info_3 и нажать Save<br>
