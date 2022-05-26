@@ -381,3 +381,51 @@ pm.test("Item_15 childrens", function () {
      pm.expect(jsonData.family.children[0]).to.eql(["Alex",24])
 });
 ```
+<hr>
+    
+<h4>Endpoint_1</h4>
+http://162.55.220.72:5005/first<bt>
+
+1. Отправить запрос. (Метод GET) <br>
+<i>ответ:</i>
+```
+    This is the first responce from server!
+```
+     
+2. Статус код 200 <br>
+   
+<i>перейти в поле Tests<br>
+выбрать из списка SNIPPETS "Status code: Code is 200"<br>
+в поле ввода кода тестов:</i>
+```js
+pm.test("Status code is 200", function () {
+    pm.response.to.have.status(200);
+});
+```
+Save - Send<br>
+<i>во вкладке Test Results</i>
+```
+PASS Status code is 200
+    
+```
+
+3.Проверить, что в body приходит правильный string.<br>
+<i>ответ в body</i>
+```
+This is the first responce from server!
+```
+    
+<i>перейти в поле Tests<br>
+выбрать из списка SNIPPETS "Response body: Is equal to a string"<br>
+в поле ввода кода тестов:</i> 
+    
+```js
+pm.test("Body is correct", function () {
+    pm.response.to.have.body("This is the first responce from server!");
+});
+```
+Save - Send<br>
+<i>во вкладке Test Results</i>
+```
+PASS Body is correct
+```
