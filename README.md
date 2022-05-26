@@ -383,7 +383,7 @@ pm.test("Item_15 childrens", function () {
 ```
 <hr>
     
-<h4>Endpoint_1</h4>
+<h3>Endpoint_1</h3>
 http://162.55.220.72:5005/first<bt>
 
 1. Отправить запрос. (Метод GET) <br>
@@ -429,3 +429,113 @@ Save - Send<br>
 ```
 PASS Body is correct
 ```
+    <hr>
+    <h5>(EP2 из HW_1) http://162.55.220.72:5005/user_info_3</h5>
+<i>Add request<br>
+метод POST<br>
+в поле "Enter request URL" вписать http://162.55.220.72:5005/user_info_3 и нажать Save<br>
+
+Отправить запрос.<br>
+нажать Send<br></i>
+
+Статус код 200
+перейти в поле Tests
+выбрать из списка справа Status Code is 200
+в поле ввода кода тестов:
+
+pm.test("Status code is 200", function () {
+    pm.response.to.have.status(200);
+});
+Save - Send
+во вкладке Test Results
+
+PASS Status code is 200
+Спарсить response body в json.
+из списка справа выбрать Response body: JSON value check
+в окне редактирования тестов оставить код:
+
+let responseData = pm.response.json();  
+console.log(responseData);
+Проверить содержимое переменной, выводя ее в Console:
+
+{age: "34", family: {…}, name: "Marg0sh"…}
+Проверить, что name в ответе равно name s request (name вбить руками.)
+из списка справа выбрать Response body: JSON value check
+в окне редактирования тестов оставить код:
+
+pm.test("name в запросе равен name в ответе", function () {
+    pm.expect(responseData.name).to.eql("Marg0sh");
+});
+во вкладке Test Results
+
+PASS name в запросе равен name в ответе
+Проверить, что age в ответе равно age s request (age вбить руками.)
+в окне редактирования тестов код:
+
+pm.test("age в запросе равен age в ответе", function () {
+    pm.expect(responseData.age).to.eql("34");
+});
+во вкладке Test Results
+
+PASS age в запросе равен age в ответе
+Проверить, что salary в ответе равно salary s request (salary вбить руками.)
+в окне редактирования тестов код:
+
+pm.test("salary в запросе равен salary в ответе", function () {
+    pm.expect(responseData.salary).to.eql(50000);
+});
+во вкладке Test Results
+
+PASS salary в запросе равен salary в ответе
+Спарсить request.
+в окне редактирования тестов код:
+
+let requestData = request.data;  
+console.log('request data:', requestData);
+Save - Send
+проверить содержимое переменной, выводя ее в Console:
+
+request data: {name: "Marg0sh", age: "34", salary: "50000"}
+Проверить, что name в ответе равно name s request (name забрать из request.)
+в окне редактирования тестов код:
+
+pm.test("значения name в ответе и в запросе совпадают", function () {
+pm.expect(responseData.name).to.eql(requestData.name);  
+});
+во вкладке Test Results
+
+PASS значения name в ответе и в запросе совпадают
+Проверить, что age в ответе равно age s request (age забрать из request.)
+в окне редактирования тестов код:
+
+pm.test("значения age в ответе и в запросе совпадают", function () {
+pm.expect(responseData.age).to.eql(requestData.age);  
+});
+во вкладке Test Results
+
+PASS значения age в ответе и в запросе совпадают
+Проверить, что salary в ответе равно salary s request (salary забрать из request.)
+в окне редактирования тестов код:
+
+pm.test("значения salary в ответе и в запросе совпадают", function () {
+pm.expect(responseData.salary).to.eql(Number(requestData.salary));  
+});
+во вкладке Test Results
+
+PASS значения salary в ответе и в запросе совпадают
+Вывести в консоль параметр family из response.
+в окне редактирования тестов код:
+
+console.log('Family: ', responseDate.family)
+проверить содержимое переменной, выводя ее в Console:
+
+Family: {children: [2], u_salary_1_5_year: 200000}
+Проверить что u_salary_1_5_year в ответе равно salary*4 (salary забрать из request)
+в окне редактирования тестов код:
+
+pm.test("u_salary_1_5_year в ответе равно salary*4", function () {  
+pm.expect(responseData.family.u_salary_1_5_year).to.eql(requestData.salary*4);   
+});  
+во вкладке Test Results
+
+PASS u_salary_1_5_year в ответе равно salary*4
