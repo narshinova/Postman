@@ -437,47 +437,61 @@ http://162.55.220.72:5005/user_info_3 (EP_5 из HW_1)<br>
 метод POST<br>
 в поле "Enter request URL" вписать http://162.55.220.72:5005/user_info_3 и нажать Save<br>
 
-Отправить запрос.<br>
+1. Отправить запрос.<br>
 нажать Send<br></i>
 
-Статус код 200
-перейти в поле Tests
-выбрать из списка справа Status Code is 200
-в поле ввода кода тестов:
-
+2. Статус код 200 <br>
+   
+<i>перейти в поле Tests<br>
+выбрать из списка SNIPPETS "Status code: Code is 200"<br>
+в поле ввода кода тестов:</i>
+```js
 pm.test("Status code is 200", function () {
     pm.response.to.have.status(200);
 });
-Save - Send
-во вкладке Test Results
-
+```
+Save - Send<br>
+<i>во вкладке Test Results</i>
+```
 PASS Status code is 200
-Спарсить response body в json.
+    
+```
+3. Спарсить response body в json.<br>  
+      
+<i>перейти в поле Tests<br>
+выбрать из списка SNIPPETS `"Response body: JSON value check"<br>`
+в поле ввода кода тестов:</i> 
+    
 из списка справа выбрать Response body: JSON value check
 в окне редактирования тестов оставить код:
-
+```js
 let responseData = pm.response.json();  
 console.log(responseData);
-Проверить содержимое переменной, выводя ее в Console:
-
-{age: "34", family: {…}, name: "Marg0sh"…}
-Проверить, что name в ответе равно name s request (name вбить руками.)
-из списка справа выбрать Response body: JSON value check
-в окне редактирования тестов оставить код:
-
+```
+    <i>Проверить содержимое переменной, выводя ее в Console:</i>
+```
+{age: "30", family: {…}, name: "Nata"…}
+```
+4. Проверить, что name в ответе равно name в request (name вбить руками.)<br>
+<i>из списка справа выбрать `"Response body: JSON value check"`
+в окне редактирования тестов оставить код:</i>
+```js
 pm.test("name в запросе равен name в ответе", function () {
-    pm.expect(responseData.name).to.eql("Marg0sh");
+    pm.expect(responseData.name).to.eql("Nata");
 });
-во вкладке Test Results
-
+```
+    <i>во вкладке Test Results</i>
+```
 PASS name в запросе равен name в ответе
-Проверить, что age в ответе равно age s request (age вбить руками.)
-в окне редактирования тестов код:
-
+```
+5. Проверить, что age в ответе равно age в request (age вбить руками.)
+<i>в окне редактирования тестов код:</i>
+```js
 pm.test("age в запросе равен age в ответе", function () {
     pm.expect(responseData.age).to.eql("34");
 });
-во вкладке Test Results
+```
+<i>во вкладке Test Results
 
 PASS age в запросе равен age в ответе
 Проверить, что salary в ответе равно salary s request (salary вбить руками.)
