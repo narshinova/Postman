@@ -492,8 +492,9 @@ pm.test("age в запросе равен age в ответе", function () {
 });
 ```
 <i>во вкладке Test Results
-
+```
 PASS age в запросе равен age в ответе
+
 Проверить, что salary в ответе равно salary s request (salary вбить руками.)
 в окне редактирования тестов код:
 
@@ -530,13 +531,17 @@ pm.expect(responseData.age).to.eql(requestData.age);
 во вкладке Test Results
 
 PASS значения age в ответе и в запросе совпадают
-Проверить, что salary в ответе равно salary s request (salary забрать из request.)
+5. Проверить, что salary в ответе равно salary s request (salary забрать из request.)
 в окне редактирования тестов код:
-
+```js
 pm.test("значения salary в ответе и в запросе совпадают", function () {
 pm.expect(responseData.salary).to.eql(Number(requestData.salary));  
 });
-во вкладке Test Results
+<i>
+
+
+
+во вкладке Test Results<\i>
 
 PASS значения salary в ответе и в запросе совпадают
 Вывести в консоль параметр family из response.
