@@ -484,60 +484,68 @@ pm.test("name в запросе равен name в ответе", function () {
 ```
 PASS name в запросе равен name в ответе
 ```
-5. Проверить, что age в ответе равно age в request (age вбить руками.)
+5. Проверить, что age в ответе равно age в request (age вбить руками.)<br>
 <i>в окне редактирования тестов код:</i>
 ```js
 pm.test("age в запросе равен age в ответе", function () {
     pm.expect(responseData.age).to.eql("34");
 });
 ```
-<i>во вкладке Test Results
+<i>во вкладке Test Results</i>
 ```
 PASS age в запросе равен age в ответе
-
-Проверить, что salary в ответе равно salary s request (salary вбить руками.)
-в окне редактирования тестов код:
-
+```
+6. Проверить, что salary в ответе равно salary s request (salary вбить руками.)<br>
+<i>в окне редактирования тестов код: </i>
+```js
 pm.test("salary в запросе равен salary в ответе", function () {
     pm.expect(responseData.salary).to.eql(50000);
 });
-во вкладке Test Results
+```
+<i>во вкладке Test Results</i>
 
 PASS salary в запросе равен salary в ответе
-Спарсить request.
-в окне редактирования тестов код:
 
+7.Спарсить request.<br>
+<i>в окне редактирования тестов код:</i>
+```js
 let requestData = request.data;  
 console.log('request data:', requestData);
-Save - Send
-проверить содержимое переменной, выводя ее в Console:
-
-request data: {name: "Marg0sh", age: "34", salary: "50000"}
-Проверить, что name в ответе равно name s request (name забрать из request.)
-в окне редактирования тестов код:
-
+```
+<i>Save - Send<br>
+роверить содержимое переменной, выводя ее в Console:</i>
+```
+request data: {name: "Nata", age: "37", salary: "50000"}
+```
+8. Проверить, что name в ответе равно name s request (name забрать из request.)<br>
+<i>в окне редактирования тестов код:</i>
+```js
 pm.test("значения name в ответе и в запросе совпадают", function () {
 pm.expect(responseData.name).to.eql(requestData.name);  
 });
-во вкладке Test Results
-
+```
+<i>во вкладке Test Results</i>
+```
 PASS значения name в ответе и в запросе совпадают
-Проверить, что age в ответе равно age s request (age забрать из request.)
-в окне редактирования тестов код:
-
+```
+9.Проверить, что age в ответе равно age s request (age забрать из request.)<br>
+<i>в окне редактирования тестов код:</i>
+```js
 pm.test("значения age в ответе и в запросе совпадают", function () {
 pm.expect(responseData.age).to.eql(requestData.age);  
 });
-во вкладке Test Results
-
-PASS значения age в ответе и в запросе совпадают
-5. Проверить, что salary в ответе равно salary s request (salary забрать из request.)
+```
+<i>во вкладке Test Results</i>
+```
+PASS значения name в ответе и в запросе совпадают
+```
+10. Проверить, что salary в ответе равно salary s request (salary забрать из request.)
 в окне редактирования тестов код:
 ```js
 pm.test("значения salary в ответе и в запросе совпадают", function () {
 pm.expect(responseData.salary).to.eql(Number(requestData.salary));  
 });
-<i>
+```
 
 
 
