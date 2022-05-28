@@ -649,134 +649,108 @@ pm.test("у параметра dog есть параметры name", function (
     pm.expect(responseData.family.pets.dog).to.haveOwnProperty('name');   
 });
 ```
-во вкладке Test Results
-
-PASS у параметра dog есть параметры name
-Проверить, что у параметра dog есть параметры age.
-в окне редактирования тестов оставить код:
-
+10. Проверить, что у параметра dog есть параметры age.<br>
+```js
 pm.test("у параметра dog есть параметры age", function () {  
     pm.expect(responseData.family.pets.dog).to.haveOwnProperty('age');   
 });
-во вкладке Test Results
-
-PASS у параметра dog есть параметры age
-Проверить, что параметр name имеет значение Luky.
-в окне редактирования тестов оставить код:
-
+```	
+11. Проверить, что параметр name имеет значение Luky.<br>
+```js
 pm.test("параметр name имеет значение Luky", function () {
     pm.expect(responseData.family.pets.dog.name).to.eql('Luky')
 });
-во вкладке Test Results
-
-PASS параметр name имеет значение Luky
-Проверить, что параметр age имеет значение 4.
-в окне редактирования тестов оставить код:
-
+```	
+12. Проверить, что параметр age имеет значение 4.<br>
+```js
 pm.test("параметр age имеет значение 4", function () {
     pm.expect(responseData.family.pets.dog.age).to.eql(4)
 });
-во вкладке Test Results
+```	
+<h2>(EP_6 из HW_1) http://162.55.220.72:5005/object_info_4</h2>
+<i>Add request<br>
+метод GET<br>
+в поле "Enter request URL" вписать http://162.55.220.72:5005/object_info_4?name=Marg0sh&age=34&salary=50000 и нажать Save</i><br>
 
-PASS параметр age имеет значение 4
-(EP_6 из HW_1) http://162.55.220.72:5005/object_info_4
-Add request
-метод GET
-в поле "Enter request URL" вписать http://162.55.220.72:5005/object_info_4?name=Marg0sh&age=34&salary=50000 и нажать Save
 
-Отправить запрос.
-нажать Send
-
-Статус код 200
-перейти в поле Tests
-выбрать из списка справа Status Code is 200
-
+1.Статус код 200
+```js
 pm.test("Status code is 200", function () {
     pm.response.to.have.status(200);
 });
-Save - Send
-во вкладке Test Results
-
-PASS Status code is 200
-Спарсить response body в json.
-в окне редактирования тестов оставить код:
-
+```	
+2.Спарсить response body в json.<br>
+```js
 let responseData = pm.response.json();
 console.log ('Response Data', responseData)
-Save - Send
+```
 в Console:
-
-Response Data {age: 34, name: "Marg0sh", salary: [3]}
-Спарсить request.
-в окне редактирования тестов оставить код:
-
+```
+Response Data {age: 37, name: "Nata", salary: [3]}
+```	
+3. Спарсить request.<br>
+```js	
 let requestData = pm.request.url.query.toObject();
 console.log ('Request Data', requestData)
-Save - Send
+```
 в Console:
-
-Request Data: {name: "Marg0sh", age: "34", salary: "50000"}
-Проверить, что name в ответе равно name s request (name забрать из request.)
-в окне редактирования тестов оставить код:
-
+```
+Request Data: {name: "Nata", age: "37", salary: "50000"}
+```	
+4. Проверить, что name в ответе равно name s request (name забрать из request.)<br>
+```js
 pm.test("name в ответе равно name в request ", function () {
     pm.expect(responseData.name).to.eql(requestData.name)
 });
-Save - Send
-во вкладке Test Results
-
-PASS name в ответе равно name в request
-Проверить, что age в ответе равно age из request (age забрать из request.)
-в окне редактирования тестов оставить код:
-
+```
+5. Проверить, что age в ответе равно age из request (age забрать из request.)<br>
+```js
 pm.test("age в ответе равно age из request ", function () {
     pm.expect(responseData.age).to.eql(Number(requestData.age))
 });
-Save - Send
-во вкладке Test Results
+```
 
-PASS age в ответе равно age из request 
-Вывести в консоль параметр salary из request.
-в окне редактирования тестов оставить код:
-
+6.Вывести в консоль параметр salary из request.<br>
+```js
 console.log(requestData.salary)
-Save - Send
-в Console:
-
-50000
-Вывести в консоль параметр salary из response.
-в окне редактирования тестов оставить код:
-
+```
+<>iSave - Send<br>
+в Console:</i><>br
+`50000`<br>
+	
+7. Вывести в консоль параметр salary из response.<br>
+```
 console.log(responseData.salary)
-Save - Send
-в Console:
-
-(3) [50000, "100000", "150000"]
-Вывести в консоль 0-й элемент параметра salary из response.
-в окне редактирования тестов оставить код:
-
+```	
+<i>Save - Send<br>
+в Console:<br>
+(3) [50000, "100000", "150000"]<br></i>
+	
+8. Вывести в консоль 0-й элемент параметра salary из response.<br>
+```
 console.log(responseData.salary[0])
-Save - Send
-в Console:
+```	
+<i>Save - Send<br>
+в Console:</i><br>
+`50000`
 
-50000
-Вывести в консоль 1-й элемент параметра salary параметр salary из response.
-в окне редактирования тестов оставить код:
-
+9. Вывести в консоль 1-й элемент параметра salary параметр salary из response.<br>
+```
 console.log(responseData.salary[1])
-Save - Send
-в Console:
-
-"100000"
-Вывести в консоль 2-й элемент параметра salary параметр salary из response.
-в окне редактирования тестов оставить код:
-
+```
+<>iSave - Send<br>
+в Console:</i><br>
+`"100000"`
+	
+10. Вывести в консоль 2-й элемент параметра salary параметр salary из response.<br>
+```
 console.log(responseData.salary[2])
-Save - Send
-в Console:
-
-"150000"
-Проверить, что 0-й элемент параметра salary равен salary из request (salary забрать из request.)
+```	
+<i>Save - Send<br>
+в Console:<br>
+`"150000"`</i>
+	
+11.Проверить, что 0-й элемент параметра salary равен salary из request (salary забрать из request.)
 в окне редактирования тестов оставить код:
 
 pm.test("0-й элемент параметра salary равен salary из request ", function () {
