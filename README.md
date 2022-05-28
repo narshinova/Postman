@@ -628,28 +628,27 @@ pm.test("age в запросе равен age в ответе", function () {
     pm.expect(responseData.age).to.eql(requestData.age)
 });
 ```
-7. Проверить, что salary в ответе равно salary s request (salary забрать из request.)
-в окне редактирования тестов оставить код:
-
+7. Проверить, что salary в ответе равно salary s request (salary забрать из request.)<br>
+<i>в окне редактирования тестов оставить код:</i>
+```js
 m.test("salary в запросе равен salary в ответе", function () {
     pm.expect(responseData.salary).to.eql(Number(requestData.salary))
 });
-во вкладке Test Results
+```	
 
-PASS salary в запросе равен salary в ответе
-Вывести в консоль параметр family из response.
-в окне редактирования тестов оставить код:
-
+8. Вывести в консоль параметр family из response.<br>
+```js
 console.log('Family: ', responseData.family)
 в Console:
 
 Family: {children: [2], pets: {…}, u_salary_1_5_year: 200000}
-Проверить, что у параметра dog есть параметры name.
-в окне редактирования тестов оставить код:
-
+```	
+9. Проверить, что у параметра dog есть параметры name.<br>
+```js
 pm.test("у параметра dog есть параметры name", function () {  
     pm.expect(responseData.family.pets.dog).to.haveOwnProperty('name');   
 });
+```
 во вкладке Test Results
 
 PASS у параметра dog есть параметры name
