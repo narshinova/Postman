@@ -12,7 +12,7 @@
 [EP_6 /object_info_4](https://github.com/narshinova/Postman/blob/main/README.md#ep_6)<br>
 [EP_7 /user_info_2](https://github.com/narshinova/Postman/blob/main/README.md#ep_7)<hr>
 
-</i><h3>Автотесты:<h3></i>
+</i><h3>Writing test scripts + HW_2:<h3></i>
     
 [Поверка типа значения](https://github.com/narshinova/Postman/blob/main/README.md#%D0%BF%D1%80%D0%BE%D0%B2%D0%B5%D1%80%D0%BA%D0%B0-%D1%82%D0%B8%D0%BF%D0%B0-%D0%B7%D0%BD%D0%B0%D1%87%D0%B5%D0%BD%D0%B8%D1%8F)<br>
 [Проверка значения ответа по переменной](https://github.com/narshinova/Postman/blob/main/README.md#%D0%BF%D1%80%D0%BE%D0%B2%D0%B5%D1%80%D0%BA%D0%B0-%D0%B7%D0%BD%D0%B0%D1%87%D0%B5%D0%BD%D0%B8%D1%8F-%D0%BE%D1%82%D0%B2%D0%B5%D1%82%D0%B0-%D0%BF%D0%BE-%D0%BF%D0%B5%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%BD%D0%BE%D0%B9)<br>
@@ -549,7 +549,7 @@ PASS значения name в ответе и в запросе совпадаю
     
 ```js
 pm.test("значения salary в ответе и в запросе совпадают", function () {
-pm.expect(responseData.salary).to.eql(Number(requestData.salary));  
+pm.expect(responseData.salary).to.eql(+requestData.salary);  
 });
 ```
 
@@ -561,11 +561,11 @@ PASS значения salary в ответе и в запросе совпада
     
 <i>в окне редактирования тестов код:</i>
 ```
-console.log('Family: ', responseDate.family)
+console.log ("family:", jsonData.family);
 ```    
 Проверить содержимое переменной, выводя ее в Console:
 ```
-Family: {children: [2], u_salary_1_5_year: 200000}
+family: {children: [2], u_salary_1_5_year: 8000}
 ```    
 12.Проверить что u_salary_1_5_year в ответе равно salary*4 (salary забрать из request)<br
                                                                                           >
