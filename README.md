@@ -646,13 +646,13 @@ Family: {children: [2], pets: {…}, u_salary_1_5_year: 200000}
 9. Проверить, что у параметра dog есть параметры name.<br>
 ```js
 pm.test("у параметра dog есть параметры name", function () {  
-    pm.expect(jsonData.family.pets.dog).to.haveOwnProperty('name');   
+    pm.expect(jsonData.family.pets.dog).to.have.property('name');   
 });
 ```
 10. Проверить, что у параметра dog есть параметры age.<br>
 ```js
 pm.test("у параметра dog есть параметры age", function () {  
-    pm.expect(jsonData.family.pets.dog).to.haveOwnProperty('age');   
+    pm.expect(jsonData.family.pets.dog).to.have.property('age');   
 });
 ```	
 11. Проверить, что параметр name имеет значение Luky.<br>
