@@ -567,8 +567,7 @@ console.log ("family:", jsonData.family);
 ```
 family: {children: [2], u_salary_1_5_year: 8000}
 ```    
-12.Проверить что u_salary_1_5_year в ответе равно salary*4 (salary забрать из request)<br
-                                                                                          >
+12.Проверить что u_salary_1_5_year в ответе равно salary*4 (salary забрать из request)<br>
 <i>в окне редактирования тестов код:</i>
 ```js
 pm.test("u_salary_1_5_year в ответе равно salary*4", function () {  
@@ -579,7 +578,9 @@ pm.expect(responseData.family.u_salary_1_5_year).to.eql(requestData.salary*4);
 ```
 PASS u_salary_1_5_year в ответе равно salary*4
 ```
-<h2>(EP_5 из HW_1) http://162.55.220.72:5005/object_info_3</h2>
+<hr>
+<h2>Endpoint_3</h2>
+(EP_5 из HW_1) http://162.55.220.72:5005/object_info_3<br>
 <i>Add request<br>
 метод GET<br>
 в поле "Enter request URL"  http://162.55.220.72:5005/object_info_3?name=Nata&age=37&salary=50000<br>
@@ -666,8 +667,10 @@ pm.test("параметр name имеет значение Luky", function () {
 pm.test("параметр age имеет значение 4", function () {
     pm.expect(jsonData.family.pets.dog.age).to.eql(4)
 });
-```	
-<h2>(EP_6 из HW_1) http://162.55.220.72:5005/object_info_4</h2>
+```
+<hr>
+<h2>Endpoint_4</h2>
+(EP_6 из HW_1) http://162.55.220.72:5005/object_info_4<br>
 <i>Add request<br>
 метод GET<br>
 в поле "Enter request URL" вписать http://162.55.220.72:5005/object_info_4?name=Marg0sh&age=34&salary=50000 и нажать Save</i><br>
