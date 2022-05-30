@@ -773,18 +773,18 @@ pm.test("2-й элемент параметра salary равен salary*3 из 
 ```
 14. Создать в окружении переменную name<br>
 	<i>в меню слева выбирать Environment - New Environment - Nata_HW2 <br>
-	В строку Variable внести название переменной name, в Current value - Nata</i><br>
+	В строку Variable внести название переменной name</i><br>
 
 15. Создать в окружении переменную age<br>
-	<i>в меню слева выбирать Environment - Nata_HW2
-	В строку Variable внести название переменной age, в Current value - 37</i>
+	<i>в меню слева выбирать Environment - Nata_HW2<br>
+	В строку Variable внести название переменной age</i><br>
 
 16. Создать в окружении переменную salary<br>
-	<i>в меню слева выбирать Environment - Nata_HW2
-	В строку Variable внести название переменной salary, в Current value - 50000</i><br>
+	<i>в меню слева выбирать Environment - Nata_HW2<br>
+	В строку Variable внести название переменной salary</i><br>
 
 17. Передать в окружение переменную name<br>
-	<i>вернуться в коллекции, в EP_6 object_info_4, во вкладку Tests, прописать код:</i><br>
+	<i>вернуться в коллекции, в Endpoint_4 object_info_4, во вкладку Tests, прописать код:</i><br>
 ```js
 pm.environment.set('Name', responseData.name);
 ```
