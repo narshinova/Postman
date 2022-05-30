@@ -717,7 +717,7 @@ pm.test("age в ответе равно age из request ", function () {
 ```js
 console.log(requestData.salary)
 ```
-<>iSave - Send<br>
+<i>Save - Send<br>
 в Console:</i><>br
 `50000`<br>
 	
@@ -741,7 +741,7 @@ console.log(responseData.salary[0])
 ```
 console.log(responseData.salary[1])
 ```
-<>iSave - Send<br>
+<i>Save - Send<br>
 в Console:</i><br>
 `"100000"`
 	
@@ -758,7 +758,7 @@ console.log(responseData.salary[2])
 pm.test("0-й элемент параметра salary равен salary из request ", function () {
     pm.expect(responseData.salary[0]).to.eql(Number(requestData.salary))
 });
-
+```
 12. Проверить, что 1-й элемент параметра salary равен salary*2 из request (salary забрать из request.)<br>
 ```js
 pm.test(" 1-й элемент параметра salary равен salary*2 из request ", function () {
@@ -809,7 +809,8 @@ console.log('элементы списка из параметра salary:',i);
 элементы списка из параметра salary: "150000"
 ```
 	
-<h2>(EP_7 из HW_1) http://162.55.220.72:5005/user_info_2</h2>
+<h2>Endpoint_5</h2>
+(EP_7 из HW_1) http://162.55.220.72:5005/user_info_2<br>
 <i>Add request<br>
 метод POST в поле "Enter request URL" вписать http://162.55.220.72:5005/user_info_2 и нажать Save</i><br>
 
