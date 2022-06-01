@@ -2,7 +2,7 @@
 
 <h1 align="center">Работа в Postman</h1>
 
-**[HW_1](https://github.com/narshinova/Postman/blob/main/README.md#%D1%81%D0%BE%D0%B7%D0%B4%D0%B0%D1%82%D1%8C-%D0%B7%D0%B0%D0%BF%D1%80%D0%BE%D1%81%D1%8B-%D0%B2-postman)**
+<h3>HW_1 <br>
 
 [EP_1 /get_method](https://github.com/narshinova/Postman/blob/main/README.md#ep_1)<br>
 [EP_2 /user_info_3](https://github.com/narshinova/Postman/blob/main/README.md#ep_2)<br>
@@ -10,7 +10,7 @@
 [EP_4 /object_info_2](https://github.com/narshinova/Postman/blob/main/README.md#ep_4)<br>
 [EP_5 /object_info_3](https://github.com/narshinova/Postman/blob/main/README.md#ep_5)<br>
 [EP_6 /object_info_4](https://github.com/narshinova/Postman/blob/main/README.md#ep_6)<br>
-[EP_7 /user_info_2](https://github.com/narshinova/Postman/blob/main/README.md#ep_7)<hr>
+[EP_7 /user_info_2](https://github.com/narshinova/Postman/blob/main/README.md#ep_7)<hr></h3>
 
 </i><h3>Writing test scripts + HW_2:<h3></i>
     
@@ -18,13 +18,14 @@
 [Проверка значения ответа по переменной](https://github.com/narshinova/Postman/blob/main/README.md#%D0%BF%D1%80%D0%BE%D0%B2%D0%B5%D1%80%D0%BA%D0%B0-%D0%B7%D0%BD%D0%B0%D1%87%D0%B5%D0%BD%D0%B8%D1%8F-%D0%BE%D1%82%D0%B2%D0%B5%D1%82%D0%B0-%D0%BF%D0%BE-%D0%BF%D0%B5%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%BD%D0%BE%D0%B9)<br>
 [Work_1](https://github.com/narshinova/Postman/blob/main/README.md#work_1)<hr>
 
-**[HW_2]([https://github.com/narshinova/Postman/blob/main/README.md#%D1%81%D0%BE%D0%B7%D0%B4%D0%B0%D1%82%D1%8C-%D0%B7%D0%B0%D0%BF%D1%80%D0%BE%D1%81%D1%8B-%D0%B2-postman](https://github.com/narshinova/Postman/blob/main/README.md#endpoint_1))**	<br>
+**HW_2**	<br>
 [Endpoint_1 /test scripts_Body is correct](https://github.com/narshinova/Postman/blob/main/README.md#endpoint_1)<br>	
 [Endpoint_2 /test scripts_JSON value check](https://github.com/narshinova/Postman/blob/main/README.md#endpoint_2)<br>	
 [Endpoint_3 /checking request and response parameters](https://github.com/narshinova/Postman/blob/main/README.md#endpoint_3)<br>	
 [Endpoint_4 /checking request and response parameter elements,cycle](https://github.com/narshinova/Postman/blob/main/README.md#endpoint_4)<br>	
-[Endpoint_5 /parameters from the environment](https://github.com/narshinova/Postman/blob/main/README.md#endpoint_5)<br>		
-[HW_2* Postman Endpoint_6 /testing the API of this endpoint for input validation
+[Endpoint_5 /parameters from the environment](https://github.com/narshinova/Postman/blob/main/README.md#endpoint_5)<br>	<hr>	
+HW_2*<br> 
+[Postman Endpoint_6 /testing the API of this endpoint for input validation
 parameters](https://github.com/narshinova/Postman/blob/main/README.md#hw_2-postmanep_7-user_info_2)<br>	
 [Endpoint_7 /testing un the cycle](https://github.com/narshinova/Postman/blob/main/README.md#4-ep_7-user_info_2http16255220725005user_info_2)<br>	
 	
