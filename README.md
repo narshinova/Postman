@@ -979,7 +979,7 @@ Salary: только целые цифры в диапазоне 1-1000000 вк�
 let reqSal = pm.request.url.query.get('salary')
 let respSal = pm.response.json().salary
 
-for(let i = 0; i <= respSal.length-1; i++){
+for(let i = 0; i < respSal.length; i++){
     pm.test(`Request salary ${reqSal} *${i+1} == response salary ${respSal[i]}`, function(){
         pm.expect(+reqSal*(i+1)).to.eql(+respSal[i])
         // console.log('reqSal*(i+1): ', reqSal*(i+1))
