@@ -788,15 +788,15 @@ pm.test("2-й элемент параметра salary равен salary*3 из 
 В строку Variable внести название переменной name</i><br>
 
 15. Создать в окружении переменную age<br>
-<i>в меню слева выбирать Environment - Nata_HW2<br>
-В строку Variable внести название переменной age</i><br>
+`в меню слева выбирать Environment - Nata_HW2 
+В строку Variable внести название переменной age`
 
 16. Создать в окружении переменную salary<br>
-<i>в меню слева выбирать Environment - Nata_HW2<br>
-В строку Variable внести название переменной salary</i><br>
+`в меню слева выбирать Environment - Nata_HW2 
+В строку Variable внести название переменной salary`
 
 17. Передать в окружение переменную name<br>
-<i>вернуться в коллекции, в Endpoint_4 object_info_4, во вкладку Tests, прописать код:</i><br>
+`вернуться в коллекции, в Endpoint_4 object_info_4, во вкладку Tests, прописать код:`
 ```js
 pm.environment.set('Name', responseData.name);
 ```
@@ -827,13 +827,13 @@ console.log('элементы списка из параметра salary:',i);
 метод POST в поле "Enter request URL" вписать http://162.55.220.72:5005/user_info_2 и нажать Save</i><br>
 
 1.Вставить параметр salary из окружения в request<br>
-<i>перейти во вкладку Body - from-data в столбце Value напротив 'salary' написать {{Salary}}</i>
+`перейти во вкладку Body - from-data в столбце Value напротив 'salary' написать {{Salary}}`
 
 2.Вставить параметр age из окружения в age<br>
-<i>в столбце Value напротив 'age' написать {{Age}}</i><br>
+`в столбце Value напротив 'age' написать {{Age}}</i>`
 
 3.Вставить параметр name из окружения в name<br>
-<i>в столбце Value напротив 'name' написать {{Name}}<br>
+`в столбце Value напротив 'name' написать {{Name}}`
 Отправить запрос.<br>
 Save - Send</i><br>
 
