@@ -294,7 +294,7 @@ salary: int<br>
 1. Выбрать метод Post, в поле "Enter request URL" вписать [http://162.55.220.72:5005/get_test_user]<br>
 2. выбрать "Body" в нем "from-data"<br>
 2.1. в столбец "KEY" добавить три строки с именами "name", "age", "salary" и "auth_token"<br>
-2.2. в столбец "VALUE" добавить значения "Nata", "35" , "600" b ""/s34lfgbj/Natali/jjd909/86234kjkWpqc31161234567140418evny"" напротив ключей "name", "age" и "salary" "auth_token" соответственно<br>
+2.2. в столбец "VALUE" добавить значения "Nata", "35" , "600" напротив ключей "name", "age" и "salary" "auth_token" соответственно<br>
 3. нажать Save и Send<br>
 
 response:</i><br>
@@ -784,19 +784,19 @@ pm.test("2-й элемент параметра salary равен salary*3 из 
 });
 ```
 14. Создать в окружении переменную name<br>
-	<i>в меню слева выбирать Environment - New Environment - Nata_HW2 <br>
-	В строку Variable внести название переменной name</i><br>
+<i>в меню слева выбирать Environment - New Environment - Nata_HW2 <br>
+В строку Variable внести название переменной name</i><br>
 
 15. Создать в окружении переменную age<br>
-	<i>в меню слева выбирать Environment - Nata_HW2<br>
-	В строку Variable внести название переменной age</i><br>
+<i>в меню слева выбирать Environment - Nata_HW2<br>
+В строку Variable внести название переменной age</i><br>
 
 16. Создать в окружении переменную salary<br>
-	<i>в меню слева выбирать Environment - Nata_HW2<br>
-	В строку Variable внести название переменной salary</i><br>
+<i>в меню слева выбирать Environment - Nata_HW2<br>
+В строку Variable внести название переменной salary</i><br>
 
 17. Передать в окружение переменную name<br>
-	<i>вернуться в коллекции, в Endpoint_4 object_info_4, во вкладку Tests, прописать код:</i><br>
+<i>вернуться в коллекции, в Endpoint_4 object_info_4, во вкладку Tests, прописать код:</i><br>
 ```js
 pm.environment.set('Name', responseData.name);
 ```
