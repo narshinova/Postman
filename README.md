@@ -1118,11 +1118,11 @@ PASS Response has a qa_salary_after_6_months
 PASS Response has a start_qa_salary
 ```	
 <h5>Преобразовать задания 14 - 18 (проверить что параметр равен salary умножить на коэффициент) таким образом,<br> чтобы все проверки делались в цикле (1 проверка в цикле, в которую попадают нужные параметры). <br>Название теста должно видоизменяться исходя из подаваемых данных. <br>( ${} или другим способом)</h5><br>
-14. Проверить, что параметр start_qa_salary равен salary из request (salary забрать из request.)<br>
-15. Проверить, что параметр qa_salary_after_6_months равен salary * 2 из request (salary забрать из request.)<br>
-16. Проверить, что параметр qa_salary_after_12_months равен salary * 2.7 из request (salary забрать из request.)<br>
-17. Проверить, что параметр qa_salary_after_1.5_year равен salary * 3.3 из request (salary забрать из request.)<br>
-18. Проверить, что параметр qa_salary_after_3.5_years равен salary * 3.8 из request (salary забрать из request.)***<br>
+14. Проверить, что параметр start_qa_salary равен salary из request <br>
+15. Проверить, что параметр qa_salary_after_6_months равен salary * 2 из request <br>
+16. Проверить, что параметр qa_salary_after_12_months равен salary * 2.7 из request <br>
+17. Проверить, что параметр qa_salary_after_1.5_year равен salary * 3.3 из request <br>
+18. Проверить, что параметр qa_salary_after_3.5_years равен salary * 3.8 из request <br>
 ```js
 let arr = []
 const resp = pm.response.json()
