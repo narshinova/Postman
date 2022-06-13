@@ -26,9 +26,11 @@
 [Endpoint_5 /parameters from the environment](https://github.com/narshinova/Postman/blob/main/README.md#endpoint_5)<br>	<hr>	
 HW_2*<br> 
 [Postman Endpoint_6 /testing the API of this endpoint for input validation
-parameters](https://github.com/narshinova/Postman/blob/main/README.md#hw_2-postmanep_7-user_info_2)<br>	
-[Endpoint_7 /testing un the cycle](https://github.com/narshinova/Postman/blob/main/README.md#4-ep_7-user_info_2http16255220725005user_info_2)<br>	
-	
+parameters](https://github.com/narshinova/Postman/blob/main/README.md#hw_2-postmanendpoint_6-user_info_2)<br>	
+[Endpoint_7 /testing un the cycle](https://github.com/narshinova/Postman/blob/main/README.md#2endpoint_7-object_info_4http16255220725007object_info_4-)<br>	
+[Endpoint_8 /deep comparison of request and response objects](https://github.com/narshinova/Postman/blob/main/README.md#3-endpoint_8-object_info_3http16255220725005object_info_3)<br>	
+[Endpoint_9 /checking request and response parameter elements,array](https://github.com/narshinova/Postman/blob/main/README.md#3-endpoint_8-object_info_3http16255220725005object_info_3)<br>	
+<hr>
 	
 <h4>Создать запросы в Postman.</h4>
 
