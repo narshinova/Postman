@@ -961,14 +961,54 @@ console.log('элементы списка из параметра person:',i);
 ```
 <hr>
 <h2>HW_2* Postman<br>
-Endpoint_6 /user_info_2</h2>
+Endpoint_6 /user_info_2</h2><br>
+	Необходимо провести тестирование API данного эндпоинта на валидацию входных параметров. Суть задания: проверить валидации каждого поля, подаваемого в эндпоинт на возможные значения. Будем УСЛОВНО считать, что негативная проверка должна возвращать какой угодно статус НО НЕ 200! Ваша задача написать тест кейсы в постмане таким образом, что одна негативная проверка - один запрос, позитивные проверки можно объединять в 1. Ваша задача протестировать исходя из требований на все возможные аспекты. В каждом запросе тест ТОЛЬКО НА СТАТУС КОД (200 - позитивное значение, не 200 - негативное)
+	
 <h4>Требования:</h4><br>
 <i>Name: 3-40 символов включительно, запрещены префиксные и постфиксные пробелы. Поле обязательное<br>
 Age: только целые цифры в диапазоне 18-120 включительно. Поле обязательное<br>
 Salary: только целые цифры в диапазоне 1-1000000 включительно. Поле обязательное</i><br>
 	
-<h4>1. Преобразовать задание 1 таким образом, чтобы вы отправляли параметры через CSV файл. У вас будет ровно 1 запрос в коллекции, который будет<br> повторяться столько раз, сколько строк в CSV файле. Также должна быть написана функция в тестах, которая проверяет валидность входящих данных, и в<br> зависимости от этого проверяет на статус 200 или НЕ 200.</h4>
+<h4>1. Преобразовать задание 1 таким образом, чтобы вы отправляли параметры через CSV файл. У вас будет ровно 1 запрос в коллекции, который будет повторяться столько раз, сколько строк в CSV файле. Также должна быть написана функция в тестах, которая проверяет валидность входящих данных, и в<br> зависимости от этого проверяет на статус 200 или НЕ 200.</h4>
 
+```js
+function nameValidation(value) {
+	if(value && value.length > 2 && value.length < 41 && value.trim() == value) {
+	    return true
+	} else return false\
+}
+
+function ageValidation(value) {
+	if(value && !isNaN(value) && value > 17 && value < 121 && Number.isInteger(+value)) {
+             return true
+	} else return false
+}
+
+ function salaryValidation(value) {
+	if(value && !isNaN(value) && value > 0 && value < 11000001 && Number.isInteger(+value)) {
+		return true
+ 	} else return false
+}
+								 
+function validator() {
+	return nameValidation(name) && ageValidation(age) && salaryValidation(salary) ? true : false
+}
+let name = pm.iterationData.get('name')
+let age = pm.iterationData.get('age')
+let salary = pm.iterationData.get('salary')
+			
+if(validator()) {
+	pm.test(`Expect status 200 with name = \"${name}\", age = \"${age}\" and salary = \"${salary}\"`, () => {
+		pm.response.to.have.status(200);
+	})
+} else {
+         pm.test(`Expect NOT to have status 200 with name = \"${name}\", age = \"${age}\" and salary = \"${salary}\"`, () => {
+		pm.response.to.not.have.status(200);
+	})
+	
+console.log(validator())
+```
+<hr>
 <h2>2.Endpoint_7 /object_info_4<br>
 http://162.55.220.72:5007/object_info_4 </h2> <br>
 
