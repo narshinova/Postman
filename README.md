@@ -50,7 +50,7 @@ request url params:<br>
 name: str<br>
 age: int<br>
 
-<i>В коллекции Course создать "New Request" и переименовать его в "EP1"
+<i>В коллекции Course создать "New Request" и переименовать в "EP1"
 1. Выбрать метод GET, в поле "Enter request URL" дописать "/get_method", чтоб получилось http://162.55.220.72:5005/get_method
 2. выбрать "Params"<br>
 2.1. в столбец "KEY" добавить две строки с именами "name" и "age"<br>
