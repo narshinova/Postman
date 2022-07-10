@@ -1049,9 +1049,9 @@ PASS Request salary 50000 *3 == response salary 150000
 http://162.55.220.72:5005/object_info_3</h2>
 Преобразовать задания 5-7 (сравнить идентичные поля в реквесте и респонсе) таким образом, <br>чтобы это делалось ЗА ОДИН ТЕСТ (сразу все 3 поля) БЕЗ ЦИКЛОВ! (глубокое сравнение объектов).<br>
 
-5. Проверить, что name в ответе равно name s request (name забрать из request.)<br>
-6. Проверить, что age в ответе равно age s request (age забрать из request.)<br>
-7. Проверить, что salary в ответе равно salary s request (salary забрать из request.)<br>
+5. Проверить, что name в ответе равно name s request (name забрать из request)<br>
+6. Проверить, что age в ответе равно age s request (age забрать из request)<br>
+7. Проверить, что salary в ответе равно salary s request (salary забрать из request)<br>
 ```js
 let reqSal = +pm.request.url.query.get('salary')
 let reqName = pm.request.url.query.get('name')
